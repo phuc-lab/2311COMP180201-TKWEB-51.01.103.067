@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgb(225, 225, 225);
+      }
+      .container {
+        background-color: white;
+        max-width: 400px;
+        margin: 20px auto;
+        border-radius: 5px;
+        padding: 10px;
+      }
+      h2 {
+        text-align: center;
+      }
+      .input_area {
+        display: flex;
+        /* background-color: rgb(190, 255, 233); */
+        padding: 5px;
+        margin-bottom: 5px;
+        /* align-items: center;
+        justify-content: center; */
+        gap: 5px;
+        border-radius: 10px;
+        flex-wrap: wrap;
+      }
+      #add_value {
+        flex: 2 2 200px;
+        border: gray solid 0.1px;
+        height: 20px;
+        border-radius: 5px;
+      }
+      #add_button {
+        flex: 1;
+        height: 24px;
+        background-color: limegreen;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      .even {
+        background-color: lightgreen;
+      }
+      .action {
+        background-color: lime;
+        border: none;
+        border-radius: 3px;
+        height: 30px;
+      }
+      .action:active {
+        background-color: rgb(0, 174, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Add New Product</h2>
+      <div class="input_area">
+        <input type="text" id="add_value" value="" placeholder="New Product" />
+        <button id="add_button" onclick="add()">Add</button>
+      </div>
+      <h2>Display All Product</h2>
+      <div style="display: flex; justify-content: space-between">
+        <p>Product Name</p>
+        <p>9 product</p>
+      </div>
+      <div>
+        <table
+          id="product_table"
+          style="width: 100%; border-collapse: collapse"
+        >
+          <!-- <tr class="odd">
+            <td s>Sony Xperia</td>
+            <td><button class="action" onclick="edit()">Edit</button></td>
+            <td><button class="action" onclick="del()">Delete</button></td>
+          </tr>
+          <tr class="even">
+            <td s>Samsung Galaxy</td>
+            <td><button class="action" onclick="edit()">Edit</button></td>
+            <td><button class="action" onclick="del()">Delete</button></td>
+          </tr>
+          <tr class="odd">
+            <td s>Nokia 6</td>
+            <td><button class="action" onclick="edit()">Edit</button></td>
+            <td><button class="action" onclick="del()">Delete</button></td>
+          </tr>
+          <tr class="even">
+            <td s>Xiaomi Redmi note 4</td>
+            <td><button class="action" onclick="edit()">Edit</button></td>
+            <td><button class="action" onclick="del()">Delete</button></td>
+          </tr>
+          <tr class="odd">
+            <td s>Apple Iphone 6s</td>
+            <td><button class="action" onclick="edit()">Edit</button></td>
+            <td><button class="action" onclick="del()">Delete</button></td>
+          </tr>
+          <tr class="even">
+            <td s>Xiaomi Mi 5s Plus</td>
+            <td><button class="action" onclick="edit()">Edit</button></td>
+            <td><button class="action" onclick="del()">Delete</button></td>
+          </tr>
+          <tr class="odd">
+            <td s>Apple Iphone 8 Plus</td>
+            <td><button class="action" onclick="edit()">Edit</button></td>
+            <td><button class="action" onclick="del()">Delete</button></td>
+          </tr>
+          <tr class="even">
+            <td s>Fujitsu F-04E</td>
+            <td><button class="action" onclick="edit()">Edit</button></td>
+            <td><button class="action" onclick="del()">Delete</button></td>
+          </tr>
+          <tr class="odd">
+            <td s>Oppo A71</td>
+            <td><button class="action" onclick="edit()">Edit</button></td>
+            <td><button class="action" onclick="del()">Delete</button></td>
+          </tr> -->
+        </table>
+      </div>
+    </div>
+    <script>
+      //Tạo dữ liệu cơ bản
+      let product_list = ["Sony Xperia", "Samsung Galaxy", "Nokia 6"];
+      let table = "";
+      let row = "";
+      function show_product() {
+        var table = "";
+        for (var i = 0; i < product_list.length; i++) {
+          if (i % 2 == 0) row = "even";
+          else row = "odd";
+          table += `
+        <tr class="${row}">
+          <td>${product_list[i]}</td>
+          <td><button class="action" onclick="edit(${i})">Edit</button></td>
+          <td><button class="action" onclick="del(${i})">Delete</button></td>
+        </tr>
+      `;
+        }
+        document.getElementById("product_table").innerHTML = table;
+      }
+      show_product();
+      function add() {
+        var add_new = document.getElementById("add_value").value;
+        if (add_new == "") {
+          alert("Vui lòng nhập tên sản phẩm!");
+        }
+        product_list.push(add_new);
+        show_product();
+      }
+      function edit(index) {
+        let last_name = product_list[index];
+        var new_name = prompt("Mời nhập tên sản phẩm", last_name);
+        product_list[index] = new_name;
+        show_product();
+      }
+      function del(index) {
+        product_list.splice(index, 1);
+        show_product();
+      }
+    </script>
+  </body>
+</html>

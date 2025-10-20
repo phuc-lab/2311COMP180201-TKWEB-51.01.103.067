@@ -1,0 +1,24 @@
+.btn {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-left: 8px;
+}
+div {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #09e78b;
+}
+h1 {
+  text-align: center;
+}
+p {
+  font-size: larger;
+}

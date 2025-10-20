@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .border {
+        border-color: black;
+        border-style: solid;
+        border-width: 3px;
+        margin-top: -5px;
+      }
+      .single {
+        width: 45%;
+        height: 40px;
+        box-sizing: content-box;
+        font-size: larger;
+        display: inline-block;
+        margin-left: 10px;
+        margin-top: 7px;
+      }
+      .button {
+        background-color: rgb(143, 143, 210);
+        border-style: none;
+        height: 30px;
+        cursor: pointer;
+        box-shadow: 2px 2px 2px;
+        float: left;
+      }
+      .button:hover {
+        background-color: rgb(150, 1, 210);
+        box-shadow: 4px 4px 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="border" style="padding: 10px">
+      <h2>Get in touch with us by filling contact form below</h2>
+      <form>
+        <input
+          class="single"
+          name="fullname"
+          type="text"
+          placeholder="*Enter your full name"
+        />
+        <input
+          class="single"
+          name="email"
+          type="text"
+          placeholder="*Enter your email address"
+        />
+        <input
+          class="single"
+          name="subject"
+          type="text"
+          style="width: 92%"
+          placeholder="Enter your subject"
+        />
+        <textarea
+          style="padding-top: 10px; margin-top: 10px; margin-left: 7.5px"
+          name="message"
+          type="text"
+          placeholder="*Your message here"
+          rows="10"
+          cols="80"
+        ></textarea>
+        <button type="submit" class="button">Send message</button>
+        <p>*Please fill all required form field, thank!</p>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wellcome Halloween</title>
+    <!-- Link bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <!--Link Halloween font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Creepster&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .halloween {
+        font-family: "Creepster", cursive;
+      }
+    </style>
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      .content {
+        background-image: url("../img_chuong_6/halloween/halloween/background.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .title {
+        margin-bottom: 200px;
+        color: yellow;
+        position: absolute;
+        animation-name: head_title;
+        animation-duration: 1s;
+        animation-play-state: running;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+      }
+      @keyframes head_title {
+        0% {
+          opacity: 0;
+          transform: translateY(50px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .sub_title {
+        color: red;
+        position: absolute;
+        /* top: 60%; */
+        animation-name: punch_in;
+        animation-duration: 0.8s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+        animation-delay: 01s;
+      }
+
+      @keyframes punch_in {
+        0% {
+          opacity: 0;
+          transform: scale(0.3);
+        }
+        50% {
+          opacity: 1;
+          transform: scale(1.2);
+        }
+        70% {
+          transform: scale(0.9);
+        }
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+      .join_in {
+        margin-top: 250px;
+        width: 260px;
+        height: 70px;
+        font-size: 30px;
+        background-image: url("../img_chuong_6/halloween/halloween/buttons_before\ -\ Copy.jpg");
+        background-size: cover;
+        border: none;
+        border-radius: 5px;
+      }
+      .join_in:hover {
+        background-image: url("../img_chuong_6/halloween/halloween/buttons_before.jpg");
+
+        transition-duration: 0.3s;
+      }
+      .image {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 30px;
+      }
+
+      .image img {
+        width: 80px;
+        height: auto;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+      }
+
+      .image img:nth-child(1) {
+        animation-name: float;
+      }
+
+      .image img:nth-child(2) {
+        animation-name: shake;
+        animation-duration: 1.5s;
+      }
+
+      .image img:nth-child(3) {
+        animation-name: fly;
+        animation-duration: 4s;
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+      }
+
+      @keyframes shake {
+        0%,
+        100% {
+          transform: rotate(0deg);
+        }
+        25% {
+          transform: rotate(5deg);
+        }
+        75% {
+          transform: rotate(-5deg);
+        }
+      }
+
+      @keyframes fly {
+        0% {
+          transform: translateX(0);
+        }
+        50% {
+          transform: translateX(20px);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" style="font-family: Creepster, cursive" href="#"
+          >WELLCOME TO OUR HALLOWEEN PARTY</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                style="font-family: Creepster, cursive"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                style="font-family: Creepster, cursive"
+                href="history.html"
+                >Halloween history</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                style="font-family: Creepster, cursive"
+                href="product.html"
+                >STORE</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                style="font-family: Creepster, cursive"
+                href="#"
+                >IMAGE</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link disabled"
+                style="font-family: Creepster, cursive"
+                aria-disabled="true"
+                >END ?</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="content">
+      <div class="title">
+        <h1 style="font-family: Creepster, cursive; font-size: 80px">
+          HALLOWEEN PARTY
+        </h1>
+      </div>
+      <div class="sub_title">
+        <p style="font-family: Creepster, cursive; font-size: 80px">
+          Fright Night Fun
+        </p>
+      </div>
+      <button
+        style="font-family: Creepster, cursive"
+        class="join_in"
+        href="join.html"
+      >
+        <a
+          style="font-family: Creepster, cursive; text-decoration: none"
+          href="join.html"
+          >Join us</a
+        >
+      </button>
+    </div>
+    <div class="image">
+      <img src="../img_chuong_6/halloween/halloween/Soul.ico" />
+      <img src="../img_chuong_6/halloween/halloween/Pumpkin.ico" />
+      <img
+        src="../img_chuong_6/halloween/halloween/Iconcreme-Halloween-Bat.512.png"
+      />
+    </div>
+  </body>
+</html>

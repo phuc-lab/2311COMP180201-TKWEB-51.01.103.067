@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+  <body lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous"
+      />
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"
+      ></script>
+      <style>
+        .add {
+          background-color: rgba(255, 244, 92, 0.727);
+          border: none;
+          height: 40px;
+          border-radius: 5px;
+        }
+        .add:hover {
+          background-color: rgb(201, 201, 42);
+          border: none;
+          height: 50px;
+          border-radius: 5px;
+        }
+        .add:active {
+          background-color: rgb(255, 64, 0);
+          border: none;
+          height: 50px;
+          border-radius: 5px;
+        }
+        .buy {
+          background-color: rgba(255, 0, 0, 0.472);
+          border: none;
+          height: 40px;
+          border-radius: 5px;
+        }
+        .buy:hover {
+          background-color: rgba(255, 0, 0, 0.62);
+          border: none;
+          height: 50px;
+          border-radius: 5px;
+        }
+        .buy:active {
+          background-color: rgba(255, 0, 0, 0.9);
+          border: none;
+          height: 50px;
+          border-radius: 5px;
+        }
+      </style>
+    </head>
+    <div>
+      <div class="container" style="height: auto">
+        <div class="row" style="margin-top: 20px" ;>
+          <div class="col-4">
+            <h4>
+              <b><u>FIT-HCMUE Shop</u></b>
+            </h4>
+            <p style="padding-top: -20px">Bring knowledge to everyone</p>
+          </div>
+          <div class="col-4"></div>
+          <div class="col-4">
+            <img src="../img/groupworking.png" style="width: 50%" />
+          </div>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Trang chủ</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Giới thiệu</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sản phẩm</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Liên hệ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Hỏi đáp</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Tài khoản
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Nguyễn Văn A</a></li>
+                    <li><a class="dropdown-item" href="#">Trần Thị B</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success">Search</button>
+                <button class="nav-link">English</button>
+                <button class="nav-link">Tiếng Việt</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+        <div
+          class="card"
+          style="
+            width: 1120px;
+            height: auto;
+            display: grid;
+            grid-template-columns: 70% 30%;
+          "
+        >
+          <div class="card-body">
+            <div
+              class="first_line"
+              style="display: grid; grid-template-columns: auto; gap: 5px"
+            >
+              <div class="card text-center">
+                <div class="card-header"><b>IPHONE 17</b></div>
+                <div
+                  class="card-body"
+                  style="
+                    display: grid;
+                    grid-template-columns: 30% 70%;
+                    gap: 10px;
+                  "
+                >
+                  <div style="display: grid; grid-template-rows: 85% 15%">
+                    <div>
+                      <img
+                        style="object-fit: cover; height: 70%"
+                        src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcS2MpFZ18qy4F-Vlq8TE7EwMIKQtSeSH09B_6wxMUfTyQgS0_qFL5Pu7RxxS2yjrY80nLMkQGa9r_JGyRUtvcbl_jXbBYtw2g0mmKu64BHDh3HzRYcxq4dsQtQ"
+                      />
+                    </div>
+                    <div>
+                      <button class="add">Thêm giỏ hàng</button>
+                      <button class="buy">Mua ngay</button>
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      border: solid 1px;
+                      border-radius: 8px;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                    "
+                  >
+                    <ul style="list-style-type: circle">
+                      <li>
+                        <h3>
+                          Màn hình: 6.3 inch, Super Retina XDR, ProMotion 120Hz,
+                          độ sáng tối đa 3000 nits
+                        </h3>
+                      </li>
+                      <li>
+                        <h3>
+                          Camera: 48MP camera chính + 12MP camera siêu rộng
+                        </h3>
+                      </li>
+                      <li>
+                        <h3>
+                          Hiệu năng: Chip A19 đem lại hiệu năng tuyệt vời sáng
+                          tối đa 3000 nits
+                        </h3>
+                      </li>
+                      <li><h3>Pin và sạc: Hỗ trợ sạc nhanh tối đa 35W</h3></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-footer text-body-secondary">
+                  Mua ngay kẻo lỡ
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            style="
+              margin-top: 15px;
+              padding-left: 40px;
+              display: grid;
+              grid-template-rows: auto auto auto;
+            "
+          >
+            <div class="card" style="width: 270px">
+              <div class="card-header">Giỏ hàng</div>
+              <ul class="list-group list-group-flush">
+                <li
+                  class="list-group-item"
+                  style="display: grid; grid-template-columns: 30% 70%"
+                >
+                  <div>
+                    <img src="../img/shopping_cart.png" alt="" width="50px" />
+                  </div>
+                  <div>
+                    <ul style="list-style: none">
+                      <li>10 sp</li>
+                      <li>5.000.000đ</li>
+                      <li><a href="#">Giỏ hàng</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <div class="card" style="width: 270px; margin-top: 10px">
+                <div class="card-header">Tìm kiếm</div>
+                <ul class="list-group list-group-flush" style="padding: 5px">
+                  <div class="container-fluid">
+                    <form class="d-flex" role="search">
+                      <input
+                        class="form-control me-2"
+                        type="search"
+                        placeholder="Search"
+                        aria-label="Search"
+                      />
+                      <button class="btn btn-outline-success" type="submit">
+                        Search
+                      </button>
+                    </form>
+                  </div>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div class="card" style="width: 270px; margin-top: -5px">
+                <div class="card-header">Featured</div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Điện thoại</li>
+                  <li class="list-group-item">Laptop</li>
+                  <li class="list-group-item">Tablet</li>
+                  <li class="list-group-item">Điều hoà</li>
+                  <li class="list-group-item">Tivi</li>
+                  <li class="list-group-item">Tủ lạnh</li>
+                  <li class="list-group-item">Điện gia dụng</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="row card">
+      <div class="card-body text-center">FIT-HCMUE &copy;2025</div>
+    </footer>
+  </body>
+</html>

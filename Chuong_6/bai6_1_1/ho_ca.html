@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #content {
+        border: solid 1px;
+        width: 1000px;
+        height: 500px;
+        position: relative;
+        background-image: url("https://images.unsplash.com/photo-1530053969600-caed2596d242?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dW5kZXJ3YXRlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=700");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      #shark {
+        position: absolute;
+        animation-name: shark;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+      #shark img {
+        width: 200px;
+      }
+      @keyframes shark {
+        0% {
+          left: 0;
+          top: 0;
+        }
+        20% {
+          left: 200px;
+          top: 150px;
+        }
+        40% {
+          left: 600px;
+          top: 150px;
+        }
+        49.99% {
+          transform: scaleX(1);
+        }
+        50% {
+          left: 800px;
+          top: 150px;
+          transform: scaleX(-1);
+        }
+        60% {
+          left: 500px;
+          top: 150px;
+          transform: scaleX(-1);
+        }
+        80% {
+          left: 200px;
+          top: 100px;
+          transform: scaleX(-1);
+        }
+        99.99% {
+          transform: scaleX(-1);
+        }
+        100% {
+          left: 0px;
+          top: 0px;
+          transform: skewX(1);
+        }
+      }
+      #turtle {
+        position: absolute;
+        animation-name: turtle;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+      #turtle img {
+        width: 100px;
+      }
+      @keyframes turtle {
+        0% {
+          left: 300px;
+          top: 50px;
+        }
+        20% {
+          left: 350px;
+          top: 150px;
+        }
+        40% {
+          left: 450px;
+          top: 150px;
+        }
+
+        50% {
+          left: 550px;
+          top: 150px;
+          transform: scaleX(1);
+        }
+        59.99% {
+          transform: scaleX(1);
+        }
+        60% {
+          left: 650px;
+          top: 100px;
+          transform: scaleX(-1);
+        }
+        80% {
+          left: 450px;
+          top: 100px;
+          transform: scaleX(-1);
+        }
+        99.99% {
+          transform: scaleX(-1);
+        }
+        100% {
+          left: 300px;
+          top: 50px;
+          transform: skewX(1);
+        }
+      }
+      #diver1 {
+        position: absolute;
+        animation-name: diver1;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+      #diver1 img {
+        width: 150px;
+      }
+      @keyframes diver1 {
+        0% {
+          left: 0px;
+          top: 100px;
+        }
+        20% {
+          left: 150px;
+          top: 200px;
+        }
+        40% {
+          left: 250px;
+          top: 300px;
+        }
+
+        50% {
+          left: 300px;
+          top: 350px;
+        }
+        59.99% {
+          transform: scaleX(1);
+        }
+        60% {
+          left: 400px;
+          top: 410px;
+          transform: scaleX(-1);
+        }
+        80% {
+          left: 250px;
+          top: 250px;
+          transform: scaleX(-1);
+        }
+        99.99% {
+          transform: scaleX(-1);
+        }
+        100% {
+          left: 0px;
+          top: 100px;
+          transform: skewX(1);
+        }
+      }
+      #diver2 {
+        position: absolute;
+        animation-name: diver2;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+      #diver2 img {
+        width: 150px;
+      }
+      @keyframes diver2 {
+        0% {
+          left: 500px;
+          top: 0px;
+        }
+        20% {
+          left: 550px;
+          top: 200px;
+        }
+        40% {
+          left: 450px;
+          top: 400px;
+        }
+        49.99% {
+          transform: scaleX(1);
+        }
+
+        50% {
+          left: 500px;
+          top: 410px;
+          transform: scaleX(-1);
+        }
+        60% {
+          left: 400px;
+          top: 350px;
+          transform: scaleX(-1);
+        }
+        79.99% {
+          transform: scaleX(-1);
+        }
+        80% {
+          left: 350px;
+          top: 200px;
+          transform: scaleX(1);
+        }
+        99.99% {
+          transform: scaleX(1);
+        }
+        100% {
+          left: 500px;
+          top: 0px;
+          transform: scaleX(1);
+        }
+      }
+      #diver3 {
+        position: absolute;
+        animation-name: diver3;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+      #diver3 img {
+        width: 150px;
+      }
+      @keyframes diver3 {
+        0% {
+          left: 850px;
+          top: 0px;
+          transform: scaleX(-1);
+        }
+        20% {
+          left: 800px;
+          top: 200px;
+          transform: scaleX(-1);
+        }
+        40% {
+          left: 750px;
+          top: 350px;
+          transform: scaleX(-1);
+        }
+        59.99% {
+          transform: scaleX(-1);
+        }
+        60% {
+          left: 700px;
+          top: 400px;
+          transform: scaleX(1);
+        }
+        80% {
+          left: 800px;
+          top: 200px;
+        }
+        99.99% {
+        }
+        100% {
+          left: 850px;
+          top: 0px;
+        }
+      }
+      #gold_fish {
+        position: absolute;
+        animation-name: gold_fish;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+      #gold_fish img {
+        width: 150px;
+      }
+      @keyframes gold_fish {
+        0% {
+          left: 0px;
+          top: 360px;
+        }
+        20% {
+          left: 150px;
+          top: 300px;
+        }
+        40% {
+          left: 250px;
+          top: 200px;
+        }
+        59.99% {
+          transform: scaleX(1);
+        }
+        60% {
+          left: 300px;
+          top: 200px;
+          transform: scaleX(-1);
+        }
+        80% {
+          left: 100px;
+          top: 300px;
+          transform: scaleX(-1);
+        }
+        99.99% {
+        }
+        100% {
+          left: 0px;
+          top: 360px;
+          transform: scaleX(-1);
+        }
+      }
+      #final {
+        position: absolute;
+        animation-name: final;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+      #final img {
+        width: 150px;
+      }
+      @keyframes final {
+        0% {
+          left: 800px;
+          top: 360px;
+        }
+        20% {
+          left: 650px;
+          top: 300px;
+        }
+        40% {
+          left: 450px;
+          top: 300px;
+        }
+        59.99% {
+          transform: scaleX(1);
+        }
+        60% {
+          left: 500px;
+          top: 300px;
+          transform: scaleX(-1);
+        }
+        80% {
+          left: 700px;
+          top: 300px;
+          transform: scaleX(-1);
+        }
+        99.99% {
+        }
+        100% {
+          left: 800px;
+          top: 360px;
+          transform: scaleX(-1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="content">
+      <div id="shark">
+        <img src="./aquarium/shark.png" />
+      </div>
+      <div id="turtle">
+        <img src="./aquarium/turtle.png" />
+      </div>
+      <div id="diver1">
+        <img src="./aquarium/diver1.png" />
+      </div>
+      <div id="diver2">
+        <img src="./aquarium/diver2.png" />
+      </div>
+      <div id="diver3">
+        <img src="./aquarium/diver3.png" />
+      </div>
+      <div id="gold_fish">
+        <img src="./aquarium/goldFishSchool.png" />
+      </div>
+      <div id="final">
+        <img src="./aquarium/faintSchool.png" />
+      </div>
+    </div>
+  </body>
+</html>
