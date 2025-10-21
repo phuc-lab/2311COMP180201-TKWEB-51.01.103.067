@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: cursive;
+        display: flex;
+        justify-content: center;
+      }
+      .box1 {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        gap: 5px;
+        border: solid 1px;
+        box-shadow: 5px 5px 15px black;
+        max-width: 700px;
+      }
+      .column1 {
+        display: grid;
+        grid-template-rows: auto auto;
+        background-image: url("./img_chuong_6/back2.png");
+      }
+      .ava {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .column1 .ava img {
+        max-width: 100px;
+        max-height: 100px;
+        border-radius: 50%;
+      }
+      .column2 {
+        display: grid;
+        grid-template-rows: 10% 90%;
+      }
+      p {
+        margin-top: -5px;
+      }
+      .name {
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">
+      <div class="column1">
+        <div class="ava">
+          <img src="./img_chuong_6/ava.jpg" />
+        </div>
+        <div class="about">
+          <h2>VỀ BẢN THÂN</h2>
+          <p>
+            Là một sinh viên tràn đầy năng lượng và luôn muốn tham gia các hoạt
+            động nhằm nâng cao khả năng của bản thân. Luôn có trách nhiệm với
+            công việc và không ngại khó khăn.
+          </p>
+          <h2>LIÊN HỆ</h2>
+          <p>Qua email : phamphu235@gmail.com Facebook : Roi nghe</p>
+          <h2>KĨ NĂNG</h2>
+          <progress value="10" max="100"></progress>
+          <p>C++</p>
+          <progress value="30" max="100"></progress>
+          <p>HTML</p>
+          <progress value="20" max="100"></progress>
+          <p>Python</p>
+          <progress value="40" max="100"></progress>
+          <p>Edit video</p>
+          <h2>NGƯỜI THAM CHIẾU</h2>
+          <p>
+            Người tham chiếu:<br />
+            - Ông Phạm Văn Hai - Người phụ trách hướng nghiệp<br />
+            - Công ty XYZ<br />
+            - Điện thoại: 0987 654 321<br />
+            - Email: phamvanhai@gmail.com<br />
+            <em>Có thể liên hệ để xác nhận năng lực và thái độ làm việc.</em>
+          </p>
+        </div>
+      </div>
+      <div class="column2">
+        <div class="name">
+          <h1>NGUYỄN TRỌNG PHÚC</h1>
+        </div>
+        <div class="detail">
+          <h2>QUÁ TRÌNH HỌC TẬP</h2>
+          <p>
+            <b>Từ năm 2013-2018: Học tập tại trường tiểu học An Nhơn Tây</b>
+          </p>
+          <p>
+            <b>Từ năm 2013-2018: Học tập tại trường THCS An Nhơn Tây</b>
+          </p>
+          <p>
+            <b>Từ năm 2013-2018: Học tập tại trường THPT An Nhơn Tây</b>
+          </p>
+          <p>
+            <b
+              >Từ năm 2013-2018: Học tập tại trường Đại học Sư phạm thành phố Hồ
+              Chí Minh</b
+            >
+          </p>
+          <h2>KINH NGHIỆM</h2>
+          <p><b>Biết sử dụng các ngôn ngữ lập trình C++, Python cơ bản</b></p>
+          <p><b>Biết thiết kế bố cục web</b></p>
+          <p><b>Có hiểu biết về phần cứng máy tính</b></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
